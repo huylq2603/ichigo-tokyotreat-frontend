@@ -1,0 +1,71 @@
+.groupAll {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group234 {
+    display: flex;
+    flex-direction: column;
+}
+
+.group56789 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* layout for small screen (<= 600px) */
+.group56,
+.group89 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.group234 :nth-child(1) {
+    order: 2;
+}
+
+.group234 :nth-child(2) {
+    order: 1;
+}
+
+.group56789 :nth-child(2) {
+    order: 1;
+}
+
+.group56789 :nth-child(1) {
+    order: 2;
+}
+
+.group56789 :nth-child(3) {
+    order: 3;
+}
+
+/* layout for large screen (> 600px) */
+@media only screen and (min-width: 601px) {
+    .group234 :nth-child(1) {
+        order: 1;
+    }
+
+    .group234 :nth-child(2) {
+        order: 2;
+    }
+
+    .group56,
+    .group89 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group56789 :nth-child(1) {
+        order: 1;
+    }
+
+    .group56789 :nth-child(2) {
+        order: 2;
+    }
+
+    .group56789 :nth-child(3) {
+        order: 3;
+    }
+}

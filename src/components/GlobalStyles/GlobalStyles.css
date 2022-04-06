@@ -1,0 +1,136 @@
+body {
+    max-width: 100vw;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.no-select {
+    user-select: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.col-s1 {
+    width: 8.33vw;
+}
+
+.col-s2 {
+    width: 16.66vw;
+}
+
+.col-s3 {
+    width: 25vw;
+}
+
+.col-s4 {
+    width: 33.33vw;
+}
+
+.col-s5 {
+    width: 41.66vw;
+}
+
+.col-s6 {
+    width: 50vw;
+}
+
+.col-s7 {
+    width: 58.33vw;
+}
+
+.col-s8 {
+    width: 66.66vw;
+}
+
+.col-s9 {
+    width: 75vw;
+}
+
+.col-s10 {
+    width: 83.33vw;
+}
+
+.col-s11 {
+    width: 91.66vw;
+}
+
+.col-s12 {
+    width: 100vw;
+}
+
+@media only screen and (min-width: 601px) {
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .col-l1 {
+        width: 8.33vw;
+    }
+
+    .col-l2 {
+        width: 16.66vw;
+    }
+
+    .col-l3 {
+        width: 25vw;
+    }
+
+    .col-l4 {
+        width: 33.33vw;
+    }
+
+    .col-l5 {
+        width: 41.66vw;
+    }
+
+    .col-l6 {
+        width: 50vw;
+    }
+
+    .col-l7 {
+        width: 58.33vw;
+    }
+
+    .col-l8 {
+        width: 66.66vw;
+    }
+
+    .col-l9 {
+        width: 75vw;
+    }
+
+    .col-l10 {
+        width: 83.33vw;
+    }
+
+    .col-l11 {
+        width: 91.66vw;
+    }
+
+    .col-l12 {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 15vh !important;
+    }
+}
+
+.content {
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
